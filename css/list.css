@@ -1,0 +1,130 @@
+.nav{
+    overflow: hidden;
+}
+
+.sk{
+    position: absolute;
+    border-left: 1px solid #c40000;
+    left: 190px;
+    top: 40px;
+    padding:3px 0 0 14px;
+   
+}
+.sk_list
+{
+    float: left;
+}
+.sk_list ul li{
+    float: left;
+}
+.sk_list ul li a{
+    display: block;
+    /* height: 16px; */
+    line-height:47px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.sk_con
+{float: left;
+}
+.sk_con ul li{
+    float: left;
+   
+    
+}
+.sk_con ul li a{
+    display: block;
+    /* height: 16px; */
+    line-height:48px;
+    padding: 0 22px;
+    font-size: 14px;
+
+}
+.sk_con ul li:last-child a::after
+{
+    font-family: 'icomoon';
+    content: '\e91e';
+    line-height:49px;
+
+}
+.sk_hd{
+    margin-bottom: 12px;
+}
+.sk_bd 
+{
+    overflow: hidden;
+}
+.sk_bd ul li
+{
+    margin: 15px 0;
+    float: left;
+/* text-align: center; */
+
+width: 290px;
+height: 460px;
+/* background-color: pink; */
+border: 1px solid transparent;
+overflow: hidden;
+margin-right: 12px;
+
+}
+.sk_bd ul li:nth-child(4n)
+{
+    margin-right: 0;
+}
+.sk_bd ul li:hover{
+    border: 1px solid #b1191a;
+}
+.sk_bd ul li h4{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+.sk_bd ul li .price
+{
+    display: inline;
+    font-size: 22px;
+    padding: 0 5px;
+ 
+}
+.sk_bd ul li span{
+    font-weight: 700;
+    text-decoration:line-through; 
+    color: #a4a4a4;
+}
+.goods_progress
+{
+    margin-left: 5px;
+    height: 35px; 
+    line-height: 35px;
+    font-size: 14px;
+}
+.bar {
+    display: inline-block;
+    width: 131px;
+    height: 12px;
+    border: 1px solid red;
+    border-radius: 7px;
+}
+.bar_in {
+    width: 87%;
+    height: 11px;
+    background-color: red;
+    border-radius:6px 0 0  6px;
+
+}
+.sk_bd ul li a{
+    display: block;
+    width: 290px;
+    height: 49px;
+    line-height: 49px;
+    background-color: #b1191a;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    
+}

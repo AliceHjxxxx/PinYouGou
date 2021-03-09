@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?tomleg');
+    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* shortcut快捷导航栏模块 */
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+.shortcut li {
+    float: left;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+    margin: 9px 15px 0;
+}
+
+.arrow-icon {
+    display: inline-block;
+}
+
+.arrow-icon::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+    margin-left: 6px;
+}
+
+
+/* header头部制作 */
+
+.header {
+    position: relative;
+    height: 105px;
+    /* background-color: pink; */
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 175px;
+    height: 62px;
+    /* background-color: skyblue; */
+}
+
+.logo a {
+    display: block;
+    width: 175px;
+    height: 62px;
+    background: url(../images/logo.png) no-repeat;
+    /* font-size: 0; 京东的做法*/
+    /* 淘宝的做法 */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    /* border: 2px solid #b1191a;*/
+}
+
+.search input {
+    float: left;
+    height: 36px;
+    width: 454px;
+    padding-left: 10px;
+    border: 2px solid #b1191a;
+}
+
+.search button {
+    float: left;
+    height: 36px;
+    width: 84px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: white;
+}
+
+#suggest-list {
+    border: 1px solid #ccc;
+    display: none;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.suggest-item {
+    line-height: 20px;
+    padding-left: 5px;
+    z-index: 999;
+}
+
+.suggest-item:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.hotwords {
+    position: absolute;
+    left: 346px;
+    top: 66px;
+}
+
+.hotwords a {
+    margin: 0 10px;
+}
+
+.shopcart {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    font-size: 12px;
+    line-height: 35px;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    vertical-align: middle;
+}
+
+.shopcart::before {
+    content: '\e93a';
+    font-family: 'icomoon';
+    margin-right: 5px;
+    color: #b1191a;
+    /* font-size: 14px; */
+}
+
+.shopcart::after {
+    content: '\e920';
+    font-family: 'icomoon';
+    margin-left: 8px;
+    /* font-size: 14px;*/
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 105px;
+    line-height: 14px;
+    height: 14px;
+    color: white;
+    padding: 0 5px;
+    background-color: #b1191a;
+    border-radius: 7px 7px 7px 0;
+}
+
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #b1191a;
+}
+
+.nav .dropdown {
+    float: left;
+    width: 210px;
+    height: 45px;
+    color: white;
+    line-height: 47px;
+    text-align: center;
+}
+
+.nav .dropdown .dt {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    background-color: #b1191a;
+}
+
+.nav .dropdown .dd {
+    /* display: none; */
+    width: 100%;
+    height: 465px;
+    /* margin-top: 2px; */
+    background-color: #c81623;
+    border-left: 1px solid #c81623;
+}
+
+.nav .dropdown .dd ul li {
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    transition: all .5s;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.nav .dropdown .dd ul li::after {
+    position: absolute;
+    content: '\e920';
+    font-family: 'icomoon';
+    font-size: 14px;
+    right: 10px;
+}
+
+.nav .dropdown .dd ul li:hover {
+    background-color: #fff;
+    padding-left: 20px;
+}
+
+.nav .dropdown .dd ul li a {
+    font-size: 14px;
+    color: white;
+}
+
+.nav .dropdown .dd ul li:hover a {
+    color: #c81623;
+}
+
+.nav .navitems {
+    float: left;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 25px;
+    font-size: 16px;
+}
+
+.footer {
+    height: 417px;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+
+.footer .mod_service {
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_service ul li {
+    width: 240px;
+    height: 50px;
+    float: left;
+    padding-left: 35px;
+}
+
+.mod_service ul li span {
+    /* display: inline-block; */
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+}
+
+.mod_service ul li .mod_service_icon1 {
+    background: url(../images/icons.png) no-repeat -252px -2px;
+}
+
+.mod_service ul li .mod_service_icon2 {
+    background: url(../images/icons.png) no-repeat -255px -54px;
+}
+
+.mod_service ul li .mod_service_icon3 {
+    background: url(../images/icons.png) no-repeat -257px -105px
+}
+
+.mod_service ul li .mod_service_icon4 {
+    background: url(../images/icons.png) no-repeat -258px -156px;
+}
+
+.mod_service ul li .mod_service_icon5 {
+    background: url(../images/icons.png) no-repeat -257px -208px;
+}
+
+.mod_service ul li .service_txt h4 {
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.service_txt p {
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.mod_help {
+    padding-left: 54px;
+    padding-top: 20px;
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+}
+
+.mod_help dl {
+    width: 200px;
+    float: left;
+}
+
+.mod_help dl:last-child {
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_help dl dd {
+    font-size: 12px;
+}
+
+.mod_copyright {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.mod_copyright .links {
+    margin-bottom: 20px;
+}
+
+.mod_copyright .links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}
